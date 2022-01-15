@@ -22,12 +22,9 @@ public class LiveFragment extends Fragment {
 
         binding = FragmentLiveBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-        String btext = binding.cb.getText().toString();
-        Toast.makeText(getActivity(), "" + btext, Toast.LENGTH_SHORT).show();
 
         return root;
     }
-
 
 
     @Override

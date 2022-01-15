@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#F3F3F3"
+    app:cardElevation="0dp"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/banner_news"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTopTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:fontFamily="@font/plusjakarta_text_regular"
+                android:text="Current Indian batting lineup's time may be over."
+                android:textColor="#2e2e2e"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTopDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/plusjakarta_text_regular"
+                android:text="The one line that Virat Kohli said soon after the Test got over summed up all of India’s misery. “The batting has to be looked into."
+                android:textColor="#2e2e2e"
+                android:maxLines="2"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tvTopTimestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/plusjakarta_text_regular"
+                android:text="3 Hours ago"
+                android:textColor="#2e2e2e"
+                android:maxLines="2"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

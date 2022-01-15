@@ -1,18 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ui.home.HomeFragment">
 
     <View
-        android:background="#D5163A"
         android:layout_width="match_parent"
-        android:layout_height="130dp"/>
+        android:layout_height="130dp"
+        android:background="#D5163A" />
 
     <include
+        android:id="@+id/some"
         layout="@layout/item_scoreboard" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/some">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/plusjakarta_text_regular"
+                android:text="Trending Series"
+                android:textColor="#2e2e2e"
+                android:textStyle="bold" />
+
+            <include layout="@layout/item_trending_series" />
+
+            <include layout="@layout/item_trending_series" />
+
+            <include layout="@layout/item_trending_series" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/plusjakarta_text_regular"
+                android:text="Top Stories"
+                android:textColor="#2e2e2e"
+                android:textStyle="bold" />
+
+            <include
+                layout="@layout/item_top_stories_card"
+                />
+
+            <include
+                layout="@layout/item_top_stories_card"
+                />
+
+            <include
+                layout="@layout/item_top_stories_card"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/plusjakarta_text_regular"
+                android:text="More News"
+                android:textColor="#2e2e2e"
+                android:textStyle="bold" />
+
+            <include
+                layout="@layout/item_more_news_card"
+                />
+            <include
+                layout="@layout/item_more_news_card"
+                />
+            <include
+                layout="@layout/item_more_news_card"
+                />
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
 
 </RelativeLayout>

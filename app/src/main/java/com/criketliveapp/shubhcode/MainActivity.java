@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity implements NavigationBarView
         navView.setOnItemSelectedListener(this);
         displayFragment(new HomeFragment());
 
+
+
     }
 
     @Override

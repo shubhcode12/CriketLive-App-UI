@@ -14,6 +14,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
+            android:id="@+id/ivTopStory"
             android:src="@drawable/banner_news"
             android:scaleType="centerCrop"
             android:layout_width="match_parent"

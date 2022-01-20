@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardBackgroundColor="#F3F3F3"
+    app:cardBackgroundColor="#EFEEF5"
     app:cardElevation="0dp"
     app:cardCornerRadius="15dp"
     android:layout_margin="10dp"
@@ -14,9 +14,9 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/ivTopStory"
+            android:id="@+id/ivStory"
             android:src="@drawable/banner_news"
-            android:scaleType="centerCrop"
+            android:scaleType="fitXY"
             android:layout_width="match_parent"
             android:layout_height="160dp"/>
 
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/tvTopTitle"
+                android:id="@+id/tvTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
@@ -37,7 +37,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvTopDescription"
+                android:id="@+id/tvDescription"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -50,7 +50,7 @@
                 android:textStyle="normal" />
 
             <TextView
-                android:id="@+id/tvTopTimestamp"
+                android:id="@+id/tvTimestamp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"

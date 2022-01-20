@@ -35,8 +35,10 @@ public class HomeFragment extends Fragment {
     private FragmentHomeBinding binding;
     private String apiKey= "6dbce6158f6149f992b009b6bfb79b6a";
     ArrayList<News> newsArrayList;
-    NewsAdapter newsAdapter;
+    NewsAdapter newsAdapter, moreAdapter;
     String country = "in";
+    String topType = "top";
+    String moreType = "more";
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -46,12 +48,14 @@ public class HomeFragment extends Fragment {
         View root = binding.getRoot();
 
         newsArrayList = new ArrayList<>();
-        newsAdapter = new NewsAdapter(root.getContext(), newsArrayList);
-        binding.rvNews.setLayoutManager(new LinearLayoutManager(getActivity()));
-        binding.rvNews.setAdapter(newsAdapter);
-        binding.rvNews.setOnClickListener(view -> {
-            Toast.makeText(getActivity(), "rv clicked", Toast.LENGTH_SHORT).show();
-        });
+        newsAdapter = new NewsAdapter(root.getContext(), newsArrayList, topType);
+        binding.rvTopNews.setLayoutManager(new LinearLayoutManager(getActivity()));
+        binding.rvTopNews.setAdapter(newsAdapter);
+
+        moreAdapter = new NewsAdapter(root.getContext(), newsArrayList, moreType);
+        binding.rvMoreNews.setLayoutManager(new LinearLayoutManager(getActivity()));
+        binding.rvMoreNews.setAdapter(moreAdapter);
+
         getNews();
 
         return root;

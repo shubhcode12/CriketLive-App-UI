@@ -21,7 +21,7 @@
             android:layout_gravity="center"
             app:menu="@menu/maine_menu"
             app:navigationIcon="@drawable/ic_share"
-            app:title="@string/app_name"
+            app:title="Settings"
             app:titleMarginStart="76dp"
             app:titleTextColor="@color/white" />
 

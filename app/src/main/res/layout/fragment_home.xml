@@ -64,9 +64,33 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/plusjakarta_text_regular"
+                android:padding="10dp"
+                android:text="Top Stories"
+                android:textColor="#2e2e2e"
+                android:textStyle="bold" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvNews"
+                android:id="@+id/rvTopNews"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/plusjakarta_text_regular"
+                android:padding="10dp"
+                android:text="Top Stories"
+                android:textColor="#2e2e2e"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMoreNews"
+                app:reverseLayout="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="5dp" />

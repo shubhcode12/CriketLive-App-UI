@@ -41,13 +41,17 @@
 
     </com.google.android.material.tabs.TabLayout>
 
+    <include layout="@layout/item_matches"/>
+    <include layout="@layout/item_matches"/>
+    <include layout="@layout/item_matches"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvAllMatches"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#f3f3f3"
         android:padding="5dp"
-        android:visibility="visible"
+        android:visibility="gone"
         tools:listitem="@layout/item_matches" />
 
     <androidx.recyclerview.widget.RecyclerView

@@ -13,19 +13,33 @@
         android:layout_height="130dp"
         android:background="#D5163A" />
 
-    <include
+
+    <androidx.cardview.widget.CardView
         android:id="@+id/dd"
-        layout="@layout/item_scoreboard" />
-
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvScoreBoard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:visibility="gone"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/item_scoreboard" />
+        android:layout_margin="20dp"
+        app:cardCornerRadius="10dp">
+
+        <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/imageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            app:sliderAnimationDuration="600"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderAutoCycleEnabled="true"
+            app:sliderIndicatorAnimationDuration="600"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="15dp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="3dp"
+            app:sliderIndicatorRadius="2dp"
+            app:sliderIndicatorSelectedColor="#5A5A5A"
+            app:sliderIndicatorUnselectedColor="#FFF"
+            app:sliderScrollTimeInSec="1"
+            app:sliderStartAutoCycle="true" />
+
+    </androidx.cardview.widget.CardView>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -90,10 +104,10 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvMoreNews"
-                app:reverseLayout="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="5dp" />
+                android:padding="5dp"
+                app:reverseLayout="true" />
 
         </LinearLayout>
 

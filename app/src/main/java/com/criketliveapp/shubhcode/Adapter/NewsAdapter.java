@@ -32,7 +32,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.MyVh> {
     }
 
     @NonNull
-    @Override      
+    @Override
     public MyVh onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         if (type.equals("top")) {
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_top_stories_card, parent, false);
@@ -50,7 +50,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.MyVh> {
     public void onBindViewHolder(@NonNull MyVh holder, int position) {
         holder.tvTitle.setText(newsArrayList.get(position).getTitle());
         holder.tvDescription.setText(newsArrayList.get(position).getDescription());
-        Glide.with(context).load(newsArrayList.get(position).getUrlToImage()).diskCacheStrategy(DiskCacheStrategy.ALL).into(holder.imageView);
+        Glide.with(context).load(newsArrayList.get(position).getUrlToImage()).diskCacheStrategy(DiskCacheStrategy.ALL).placeholder(R.drawable.newsplaceholder).into(holder.imageView);
         holder.imageView.setOnClickListener(view1 -> {
             Intent intent = new Intent(context, NewsDetailActivity.class);
             intent.putExtra("title", newsArrayList.get(position).getTitle());

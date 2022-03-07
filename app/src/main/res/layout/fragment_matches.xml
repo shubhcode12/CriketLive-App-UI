@@ -46,7 +46,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#f3f3f3"
-        android:visibility="gone"
+        android:padding="5dp"
+        android:visibility="visible"
         tools:listitem="@layout/item_matches" />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -54,11 +55,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#CBD0FF"
+        android:padding="5dp"
         android:visibility="gone" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvTOdiMatches"
         android:layout_width="match_parent"
+        android:padding="5dp"
         android:layout_height="match_parent"
         android:background="#FFDCC0"
         android:visibility="gone" />
@@ -66,6 +69,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvTestMatches"
         android:layout_width="match_parent"
+        android:padding="5dp"
         android:layout_height="match_parent"
         android:background="#C8FFCC"
         android:visibility="gone" />

@@ -32,7 +32,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.MyVh> {
     }
 
     @NonNull
-    @Override
+    @Override      
     public MyVh onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         if (type.equals("top")) {
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_top_stories_card, parent, false);
@@ -56,6 +56,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.MyVh> {
             intent.putExtra("title", newsArrayList.get(position).getTitle());
             intent.putExtra("description", newsArrayList.get(position).getDescription());
             intent.putExtra("image", newsArrayList.get(position).getUrlToImage());
+            intent.putExtra("url", newsArrayList.get(position).getUrl());
             context.startActivity(intent);
 
         });

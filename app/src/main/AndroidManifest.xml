@@ -12,8 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CriketLiveApp">
         <activity
+            android:name=".DemoActivity"
+            android:exported="false"
+            android:label="@string/title_activity_demo" />
+        <activity
             android:name=".NewsDetailActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".SettingActivity"
             android:exported="false" />

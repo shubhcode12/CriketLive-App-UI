@@ -15,7 +15,7 @@
         app:elevation="0dp">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbarMain"
+            android:id="@+id/toolbarDetail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -80,6 +80,11 @@
                 android:textAlignment="textStart"
                 android:textColor="#2e2e2e"
                 android:textSize="17sp" />
+
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
 
         </LinearLayout>

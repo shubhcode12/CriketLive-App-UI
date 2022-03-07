@@ -1,6 +1,7 @@
 package com.criketliveapp.shubhcode;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -20,7 +21,7 @@ import androidx.fragment.app.Fragment;
 import com.criketliveapp.shubhcode.databinding.ActivityMainBinding;
 import com.google.android.material.navigation.NavigationBarView;
 
-public class MainActivity extends AppCompatActivity implements NavigationBarView.OnItemSelectedListener{
+public class MainActivity extends AppCompatActivity implements NavigationBarView.OnItemSelectedListener , NavigationBarView.OnItemReselectedListener {
 
     ActivityMainBinding binding;
     BottomNavigationView navView;
@@ -35,8 +36,8 @@ public class MainActivity extends AppCompatActivity implements NavigationBarView
         setSupportActionBar(toolbar);
         navView = findViewById(R.id.nav_view);
         navView.setOnItemSelectedListener(this);
+        navView.setOnItemReselectedListener(this);
         displayFragment(new HomeFragment());
-
 
 
     }
@@ -51,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements NavigationBarView
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if(id == R.id.action_setting){
-            Toast.makeText(this, "going to setting", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(MainActivity.this, SettingActivity.class));
         }
         return super.onOptionsItemSelected(item);
     }
@@ -88,4 +89,8 @@ public class MainActivity extends AppCompatActivity implements NavigationBarView
                 .commit();
     }
 
+    @Override
+    public void onNavigationItemReselected(@NonNull MenuItem item) {
+
+    }
 }

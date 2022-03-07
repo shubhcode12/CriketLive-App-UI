@@ -3,13 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingTop="50dp"
     tools:context=".ui.polls.PollsFragment">
+
+    <include
+        layout="@layout/item_polls" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPagerPolls"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
 
 </LinearLayout>

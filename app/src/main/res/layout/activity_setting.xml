@@ -35,7 +35,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#f9f9f9"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/plusjakarta_text_regular"
+                android:text="Browse Cricket"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -53,7 +61,8 @@
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:padding="10dp" />
+                        android:padding="10dp"
+                        android:src="@drawable/ic_matches" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -76,7 +85,8 @@
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:padding="10dp" />
+                        android:padding="10dp"
+                        android:src="@drawable/ic_profile_2user" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -100,8 +110,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:padding="10dp"
-
-                        />
+                        android:src="@drawable/ic_profile" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -113,6 +122,14 @@
                         android:textSize="12dp" />
                 </LinearLayout>
             </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/plusjakarta_text_regular"
+                android:text="Latest Stories"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -130,7 +147,8 @@
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:padding="10dp" />
+                        android:padding="10dp"
+                        android:src="@drawable/ic_ranking" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -153,7 +171,8 @@
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:padding="10dp" />
+                        android:padding="10dp"
+                        android:src="@drawable/ic_news" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -167,6 +186,14 @@
 
 
             </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/plusjakarta_text_regular"
+                android:text="Follow Us"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -184,7 +211,8 @@
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:padding="10dp" />
+                        android:padding="10dp"
+                        android:src="@drawable/youtube" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -208,7 +236,8 @@
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:padding="10dp" />
+                        android:padding="10dp"
+                        android:src="@drawable/instagram" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -234,8 +263,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:padding="10dp"
-
-                        />
+                        android:src="@drawable/facebook" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -248,6 +276,14 @@
                         android:textSize="12dp" />
                 </LinearLayout>
             </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/plusjakarta_text_regular"
+                android:text="Rate Us"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -265,7 +301,8 @@
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:padding="10dp" />
+                        android:padding="10dp"
+                        android:src="@drawable/ic_star_1" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -290,7 +327,8 @@
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:padding="10dp" />
+                        android:padding="10dp"
+                        android:src="@drawable/ic_info_circle" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -304,6 +342,14 @@
                 </LinearLayout>
             </LinearLayout>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/plusjakarta_text_regular"
+                android:text="Settings &amp; Appearance"
+                android:textStyle="bold" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -312,7 +358,6 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-
                     android:layout_height="wrap_content"
                     android:layout_marginTop="1dp"
                     android:background="#ffffff"
@@ -323,13 +368,11 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:padding="10dp"
-
-                        app:tint="#d95755" />
+                        android:src="@drawable/ic_received" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-
                         android:fontFamily="@font/plusjakarta_text_regular"
                         android:gravity="center_horizontal"
                         android:text="Update App"
@@ -350,12 +393,12 @@
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:padding="10dp" />
+                        android:padding="10dp"
+                        android:src="@drawable/ic_setting_2" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-
                         android:fontFamily="@font/plusjakarta_text_regular"
                         android:gravity="center_horizontal"
                         android:text="Settings"
@@ -375,7 +418,8 @@
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:padding="10dp" />
+                        android:padding="10dp"
+                        android:src="@drawable/ic_security_safe" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -398,7 +442,8 @@
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:padding="10dp" />
+                        android:padding="10dp"
+                        android:src="@drawable/ic_security_safe" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -421,7 +466,8 @@
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:padding="10dp" />
+                        android:padding="10dp"
+                        android:src="@drawable/ic_security_safe" />
 
                     <TextView
                         android:layout_width="wrap_content"
